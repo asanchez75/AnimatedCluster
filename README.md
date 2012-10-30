@@ -1,14 +1,7 @@
 AnimatedCluster strategy for OpenLayers
 =======================================
 
-Cluster strategy for OpenLayers that animates clusters on zoom change.
+To support styling of single feature clusters: I have introduced the feature attributes to the cluster when the cluster count is 1.
 
-A living demo can be found at in the [demo site](http://acuriousanimal.com/code/animatedCluster/).
-More information on this strategy can be found at the [acuriosanimal](http://acuriousanimal.com/blog) blog:
-
-* [IMPROVED PERFORMANCE ON THE ANIMATEDCLUSTER FOR OPENLAYERS](http://acuriousanimal.com/blog/2012/10/09/improved-performance-on-the-animatedcluster-for-openlayers/)
-* [ANIMATEDCLUSTER DEMO SITE UPDATED TO WORK WITH OPENLAYERS 2.12](http://acuriousanimal.com/blog/2012/09/06/animatedcluster-demo-site-updated-to-work-with-openlayers-2-12/)
-* [ANIMATED MARKER CLUSTER STRATEGY FOR OPENLAYERS](http://acuriousanimal.com/blog/2012/08/19/animated-marker-cluster-strategy-for-openlayers)
-
-
+To fix the problem of missing feature when panning: I have removed the filter that removes features that are not in the viewport (not the best fix if you have a lot of features).
 
